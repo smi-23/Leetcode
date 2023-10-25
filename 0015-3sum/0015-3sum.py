@@ -17,8 +17,7 @@ class Solution:
                 current_sum = nums[i] + nums[left] + nums[right]
 
                 if current_sum == 0:
-                    triplet = [nums[i], nums[left], nums[right]]
-                    result.append(triplet)
+                    result.append([nums[i], nums[left], nums[right]])
 
                     # 중복된 요소 건너뛰기
                     while left < right and nums[left] == nums[left + 1]:
@@ -35,12 +34,8 @@ class Solution:
 
         return result
 
-# 입력 데이터
 nums = [-1, 0, 1, 2, -1, -4]
 
-# Solution 클래스의 인스턴스 생성
 solution = Solution()
-
-# tripleSum 메소드 호출
 result = solution.threeSum(nums)
 print("result =", result)
