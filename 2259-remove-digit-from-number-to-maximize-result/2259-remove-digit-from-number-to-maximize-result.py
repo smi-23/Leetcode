@@ -7,5 +7,7 @@ class Solution:
             if number[i] == digit:
                 temp = int(number[:i]+ number[i+1:])
                 ans.append(temp)
+        if not ans:
+            return number
         return str(max(ans))
                 
