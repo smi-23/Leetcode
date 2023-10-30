@@ -5,9 +5,6 @@ class Solution:
         ans = []
         for i in range(n):
             if number[i] == digit:
-                temp = int(number[:i]+ number[i+1:])
-                ans.append(temp)
-        if not ans:
-            return number
+                ans.append(number[:i]+ number[i+1:])
         return str(max(ans))
                 
