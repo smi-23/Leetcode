@@ -26,7 +26,8 @@ class Solution:
         #         if target == nums[i] + nums[j]:
         #             return [i, j]
             
-
+# nums[i]를 value가 아닌 key로 사용하는 이유는 빠른 검색을 위한 용도로 사용됩니다. 
+# 즉, 특정 값을 가지는 키를 가지고 있는지 빠르게 확인할 수 있습니다.
 nums = [2, 7, 11, 15]
 target = 9
 
